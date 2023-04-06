@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/wallpaper.jpg');
+    font-family: system-ui;
+}
+
+
+
+#headerWrap {
+    display: flex;
+    flex-direction: column;
+}
+#coverPhotoWrap {
+    padding: 15px;
+}
+#coverPhotoWrap input {
+    width: 100%;
+    border-radius: 35px;
+    /* max-width: 100%; */
+    max-height: 183px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#RegForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+#FormContainer {
+    margin-top: 15px;
+    /* padding: 15px; */
+    margin: 25px;
+    border: 1px black solid;
+    background-color: #d3d3d3bf;
+    padding: 27px;
+    border-radius: 15px;
+    /* margin-bottom: 25px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#profilePhoto{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#profilePhotoWrap {
+    margin-top: -8vh;
+    margin-left: 9px;
+}
+form p {
+    font-size: 6vw;
+    font-family: system-ui;
+}
+input[type="text" i],input[type="number" i] ,input[type="tel" i],input[type="email" i]
+{
+    padding: 1px 2px;
+    text-align: center;
+    font-size: 6vw;
+    border-radius: 8px;
+}
+#checksCon label {
+    font-size: 20px;
+    margin-inline: 5px;
+}
+
+input[type="checkbox" i] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+#checksCon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#BtnWrap{
+    text-align: center;
+}
+
+#BtnWrap button,#BtnWrapSend button{
+    padding: 12px;
+    cursor: pointer;
+    padding-inline: 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#BtnWrap button:hover{
+    background-color: rgb(106, 175, 106);
+}
+#ProDogWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#DogContent,#OwnerContent {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #ffffe0bd;
+    width: 35vw;
+}
+#Maintitle{
+    font-size: 30px;
+}
+#Wrap3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+#DogProfile{
+    font-size: 20px;
+    display:none ;
+}
+#BtnWrapSend button:hover{
+    background-color: rgb(175, 106, 106);
+
+}
+#BtnWrapSend button {
+    padding: 12px;
+    cursor: pointer;
+    padding-inline: 108px;
+    font-family: system-ui;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: rgb(236, 172, 172);
+}
+#CheckDiv {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+}
+#CheckDiv img {
+    width: 30px;
+}
+
+#Wrap3 p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+#Maintitle {
+    font-size: 38px;
+    font-weight: 700;
+    color: brown;
+}

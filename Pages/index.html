@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dog Tag</title>
+        <script type="text/JavaScript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+        </script>
+               <script
+               src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+           <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+           <!-- The core Firebase JS SDK is always required and must be listed first -->
+           <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+           <!-- TODO: Add SDKs for Firebase products that you want to use
+               https://firebase.google.com/docs/web/setup#available-libraries -->
+           <script
+               src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+           <!--**** Remember to add the database script ***-->
+           <script
+               src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+           <!--Your web app's Firebase configuration-->
+           <script src="../JS/config.js"></script>
+        <script src="../JS/index.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body onload="init()">
+        <div id="container">
+            <header id="header">
+                <div id="headerWrap">
+                    <div id="coverPhotoWrap">
+                        <input type="image"
+                            src="../images/userlessCoverPhoto.png"
+                            id="CoverPhoto"/>
+                        <input type="file" id="CoverPhotoIN" style="display:
+                            none;" onchange="loadFile(event)"/>
+                    </div>
+
+                    <div id="profilePhotoWrap">
+                        <input type="image" src="../images/profileUserless.jpg"
+                            id="profilePhoto"/>
+                        <input type="file" id="profilePhotoIN" style="display:
+                            none;" onchange="loadFile(event)"/>
+                    </div>
+
+
+
+                </div>
+            </header>
+
+            <div id="FormContainer">
+                <form id="RegForm">
+                    <p>שם חיית המחמד</p>
+                    <input type="text" name="namePetIN" id="namePetIN">
+                    <p>גיל</p>
+                    <input type="number" name="agePetIN" max="25" min="0"
+                        id="agePetIN">
+                    <p>מצב רפואי</p>
+                    <div id="checksCon">
+                        <div>
+                            <label for="kalevet">כלבת</label>
+                            <input type="checkbox" name="kalevet" id="kalevet">
+                        </div>
+                        <div>
+                            <label for="kalevet">משושה</label>
+                            <input type="checkbox" name="kalevet" id="meshushe">
+                        </div>
+                        <div>
+                            <label for="kalevet">תולעת הפארק</label>
+                            <input type="checkbox" name="kalevet" id="tolatpark">
+                        </div>
+                        <div>
+
+                            <label for="kalevet">סירוס</label>
+                            <input type="checkbox" name="kalevet" id="siros">
+                        </div>
+
+
+                    </div>
+
+                    <p>שם הבעלים</p>
+                    <input type="text" name="nameOwnerIN" id="nameOwnerIN">
+                    <p>מס נייד של הבעלים</p>
+                    <input type="tel" name="telOwnerIN" id="telOwnerIN">
+                    <p>מייל של הבעלים</p>
+                    <input type="email" name="mailOwnerIN" id="mailOwnerIN">
+                </form>
+
+            </div>
+            <div id="BtnWrap">
+                <button onclick="SubmitProfile()" id="GoBTN">הכן לי פרופיל</button>
+
+            </div>
+            <div id="DogProfile">
+                <div id="ProDogWrap">
+                    <p id="Maintitle">! מצאת כלב אבוד</p>
+                    <div id="Wrap3">
+                        <div id="DogContent">
+                            <p>אייבי</p>
+                            <p>בת 6</p>
+                            <div id="CheckDiv">
+                                <p>מחוסנת מכלבת</p>
+                                <img src="../images/check-mark.png" alt="">
+                            </div>
+                            
+                        </div>
+                        <div id="OwnerContent">
+                            <p>בעלים: שיר וגלעד</p>
+                            <p>מס טלפון</p>
+                            <p>051-1111111</p>
+    
+
+                        </div>
+                    </div>
+                    <div id="BtnWrapSend">
+                        <button>!שלח איתות</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+ 
+        </div>
+
+
+        </body>
+    </html>
